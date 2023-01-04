@@ -1,27 +1,27 @@
 ## Celltype Identifiers Collection for comparison
 ## Seokhyun Yoon (syoon@dku.edu), MLBI@DKU, Jan 03, 2023
 
-# suppressPackageStartupMessages(library(igraph))
-# suppressPackageStartupMessages(library(scater))
-# suppressPackageStartupMessages(library(xgboost))
-# suppressPackageStartupMessages(library(SingleCellExperiment))
-# suppressPackageStartupMessages(library(dplyr))
-# suppressPackageStartupMessages(library(stringr))
-# suppressPackageStartupMessages(library(preprocessCore))
-# suppressPackageStartupMessages(library(Seurat))
-# suppressPackageStartupMessages(library(org.Hs.eg.db))
-# suppressPackageStartupMessages(library(scuttle))
-#
-# suppressPackageStartupMessages(library(SingleR))
-# suppressPackageStartupMessages(library(CHETAH))
-# suppressPackageStartupMessages(library(scmap))
-#
-# suppressPackageStartupMessages(library(SCINA))
-# suppressPackageStartupMessages(library(scSorter))
-# suppressPackageStartupMessages(library(garnett))
-# suppressPackageStartupMessages(library(scCATCH))
-#
-# suppressPackageStartupMessages(library(reticulate))
+suppressPackageStartupMessages(library(igraph))
+suppressPackageStartupMessages(library(scater))
+suppressPackageStartupMessages(library(xgboost))
+suppressPackageStartupMessages(library(SingleCellExperiment))
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(stringr))
+suppressPackageStartupMessages(library(preprocessCore))
+suppressPackageStartupMessages(library(Seurat))
+suppressPackageStartupMessages(library(org.Hs.eg.db))
+suppressPackageStartupMessages(library(scuttle))
+
+suppressPackageStartupMessages(library(SingleR))
+suppressPackageStartupMessages(library(CHETAH))
+suppressPackageStartupMessages(library(scmap))
+
+suppressPackageStartupMessages(library(SCINA))
+suppressPackageStartupMessages(library(scSorter))
+suppressPackageStartupMessages(library(garnett))
+suppressPackageStartupMessages(library(scCATCH))
+
+suppressPackageStartupMessages(library(reticulate))
 
 ## Marker-based Identifiers
 
