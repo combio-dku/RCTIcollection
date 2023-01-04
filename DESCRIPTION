@@ -1,6 +1,6 @@
 Package: CTIcollection
 Title: A collection of some celltype identifiers 
-Version: 0.0.1.0
+Version: 0.0.1
 Authors@R: 
     person("S.", "Yoon", , "syoon@dku.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0464-2233"))
