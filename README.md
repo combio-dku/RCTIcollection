@@ -1,15 +1,15 @@
 ## An easy-to-use wrapper function to run celltype identifiers in R
 
-### Supported celltype identifiers
-- __Marker-based identifiers__
+### Supported celltype identifiers 
+- __Marker-based identifiers (require HiCAT marker file)__
     1. HiCAT
     1. Garnett
     2. SCINA
     3. scSorter
     4. scType
     5. scCatch
-    6. 
-- __Reference-based identifiers__
+
+- __Reference-based identifiers (require reference gene expression data with pre-annotation)__ 
     1. MarkerCount_Ref
     1. SingleR
     2. CaSTLe
