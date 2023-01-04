@@ -17,7 +17,11 @@
     4. scmap-cell
     5. scmap-cluster
 
-### Installation
+### Requirements & Installation
+- Python 3.8 or later
+- Required python package: numpy, pandas, scikit-learn, scipy, scikit-network (can be installed using `pip install <package name>`
+- Required R packages: igraph, scater, xgboost, SingleCellExperiment, dplyr, stringr, preprocessCore, Seurat, org.Hs.eg.db, scuttle, SingleR, CHETAH, scmap, SCINA, scSorter, garnett, scCATCH, reticulate
+- Once requirements are met, CTIcollection can be installed using the following command in R
 `devtools::install_github("combio-dku/CTIcollection")`
 
 ### Using the package
