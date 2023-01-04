@@ -17,7 +17,7 @@
     4. scmap-cell
     5. scmap-cluster
 
-### install
+### Installation
 `devtools::install_github("combio-dku/CTIcollection")`
 
 ### Using the package
