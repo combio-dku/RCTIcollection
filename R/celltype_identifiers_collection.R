@@ -1,27 +1,27 @@
 ## Celltype Identifiers Collection for comparison
 ## Seokhyun Yoon (syoon@dku.edu), MLBI@DKU, Jan 03, 2023
 
-suppressPackageStartupMessages(library(igraph))
-suppressPackageStartupMessages(library(scater))
-suppressPackageStartupMessages(library(xgboost))
-suppressPackageStartupMessages(library(SingleCellExperiment))
-suppressPackageStartupMessages(library(dplyr))
-suppressPackageStartupMessages(library(stringr))
-suppressPackageStartupMessages(library(preprocessCore))
-suppressPackageStartupMessages(library(Seurat))
-suppressPackageStartupMessages(library(org.Hs.eg.db))
-suppressPackageStartupMessages(library(scuttle))
+# suppressPackageStartupMessages(library(igraph))
+# suppressPackageStartupMessages(library(scater))
+# suppressPackageStartupMessages(library(xgboost))
+# suppressPackageStartupMessages(library(SingleCellExperiment))
+# suppressPackageStartupMessages(library(dplyr))
+# suppressPackageStartupMessages(library(stringr))
+# suppressPackageStartupMessages(library(preprocessCore))
+# suppressPackageStartupMessages(library(Seurat))
+# suppressPackageStartupMessages(library(org.Hs.eg.db))
+# suppressPackageStartupMessages(library(scuttle))
 
-suppressPackageStartupMessages(library(SingleR))
-suppressPackageStartupMessages(library(CHETAH))
-suppressPackageStartupMessages(library(scmap))
+# suppressPackageStartupMessages(library(SingleR))
+# suppressPackageStartupMessages(library(CHETAH))
+# suppressPackageStartupMessages(library(scmap))
 
-suppressPackageStartupMessages(library(SCINA))
-suppressPackageStartupMessages(library(scSorter))
-suppressPackageStartupMessages(library(garnett))
-suppressPackageStartupMessages(library(scCATCH))
+# suppressPackageStartupMessages(library(SCINA))
+# suppressPackageStartupMessages(library(scSorter))
+# suppressPackageStartupMessages(library(garnett))
+# suppressPackageStartupMessages(library(scCATCH))
 
-suppressPackageStartupMessages(library(reticulate))
+# suppressPackageStartupMessages(library(reticulate))
 
 ## Marker-based Identifiers
 
@@ -559,7 +559,7 @@ run_hicat <- function( df_data, marker_file = 'cell_markers_rndsystems_rev.tsv',
     return(df_pred)
 }
 
-
+#' @export
 identify_celltypes_using_marker <- function( df_data, marker, method = NULL,
                                              N_pca = 15,  Clustering_resolution = 1, N_features = 2000)
 {
@@ -931,7 +931,7 @@ remove_undesired_cell_type <- function(dfd, celltypes, undesired_lst)
     return(out)
 }
 
-
+#' @export
 identify_celltypes_using_ref <- function( df_data_test, df_data_ref, celltypes_ref, method = NULL,
                                           log_transformed = FALSE, undesired_lst = c() )
 {
@@ -977,7 +977,7 @@ identify_celltypes_using_ref <- function( df_data_test, df_data_ref, celltypes_r
     return(celltypes)
 }
 
-
+#' @export
 get_mkr_mat_from_hicat_mkr_file <- function( mkr_file, taxo_level = 'major', tissues = NULL)
 {
     df <- read.csv(mkr_file, header = TRUE, sep = '\t')
