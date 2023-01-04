@@ -559,6 +559,14 @@ run_hicat <- function( df_data, marker_file = 'cell_markers_rndsystems_rev.tsv',
     return(df_pred)
 }
 
+#' Run marker-based celltype identifier
+#'
+#' This function runs one of the marker-based celltype identifiers, specified by method
+#'
+#' @param df_data_test input cell-by-gene matrix (data frame), column name must be in Hugo symbol
+#' @param marker It can be either a string or a data frame (marker-matrix). For 'HiCAT' is must be a string representing the full path to the HiCAT marker file
+#' @param method Method to use. One of 'HiCAT', 'SCINA', 'scSorter', 'scType', 'scCatch', 'Garnett'.
+#' @return marker-matrix in data frame
 #' @export
 identify_celltypes_using_marker <- function( df_data, marker, method = NULL,
                                              N_pca = 15,  Clustering_resolution = 1, N_features = 2000)
@@ -931,6 +939,17 @@ remove_undesired_cell_type <- function(dfd, celltypes, undesired_lst)
     return(out)
 }
 
+#' Run reference-based celltype identifier
+#'
+#' This function runs one of the reference-based celltype identifiers, specified by method
+#'
+#' @param df_data_test input cell-by-gene matrix (data frame), column name must be in Hugo symbol
+#' @param df_data_ref cell-by-gene matrix (data frame) to be used as reference
+#' @param celltypes_ref A vector of celltypes corresponding to each row of df_data_ref
+#' @param method Method to use. One of 'MarkerCount', 'SingleR', 'CHETAH', 'CaSTLe', 'scmap_cell', 'scmap_cluster'.
+#' @param log_transformed If df_data_test is log-normalized, you should set it TRUE. Should be FALSE for now. 
+#' @param undesired_lst A list (vector) of celltypes that you don't want to include in reference celltype, e.g., 'Unknown' or 'Tumor'.
+#' @return marker-matrix in data frame
 #' @export
 identify_celltypes_using_ref <- function( df_data_test, df_data_ref, celltypes_ref, method = NULL,
                                           log_transformed = FALSE, undesired_lst = c() )
@@ -977,6 +996,17 @@ identify_celltypes_using_ref <- function( df_data_test, df_data_ref, celltypes_r
     return(celltypes)
 }
 
+#' Get marker-matrix from HiCAT marker file
+#'
+#' This function uses HiCAT marker file to generate marker-matrix to be used for 
+#' celltype identifiers other than HiCAT. Marker-matrix is a data frame with its
+#' rows being celltypes and columns being markers. Each entry is 0 or 1 indicating
+#' the inclusion of the marker in a celltype.
+#'
+#' @param mkr_file Path to the HiCAT marker file
+#' @param taxo_level Taxonomy level, one of 'major', 'minor' or 'subset'
+#' @param tissues A vector of tissues (groups of celltypes) to be exported
+#' @return marker-matrix in data frame
 #' @export
 get_mkr_mat_from_hicat_mkr_file <- function( mkr_file, taxo_level = 'major', tissues = NULL)
 {
