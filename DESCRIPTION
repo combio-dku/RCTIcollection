@@ -1,12 +1,35 @@
 Package: CTIcollection
-Title: A collection of some celltype identifiers 
-Version: 0.0.1
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
 Authors@R: 
-    person("S.", "Yoon", , "syoon@dku.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-0464-2233"))
-Description: The package provides with a wrapper for some celltype identifiers. Supported identifiers includes .. (marker-based identifiers) HiCAT, SCINA, scSorter, scType, scCatch, Garnett and (reference based identifiers) MarkerCount_Ref, SingleR, CHETAH, CaSTLe, scmap.
-License:`use_gpl3_license()` 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "first.last@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.1.1
+Imports:
+	igraph,
+	scater,
+	xgboost,
+	SingleCellExperiment,
+	dplyr,
+	stringr,
+	preprocessCore,
+	Seurat,
+	org.Hs.eg.db,
+	scuttle,
+	SingleR,
+	CHETAH,
+	scmap,
+	SCINA,
+	scSorter,
+	garnett,
+	scCATCH,
+	reticulate
