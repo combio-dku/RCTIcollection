@@ -1,15 +1,14 @@
 Package: CTIcollection
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: An easy-to-use wrapper function to run celltype identifiers in R 
+Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Seokhyun",
+           family = "Yoon",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "syoon@dku.edu",
+           comment = c(ORCID = "0000-0002-0464-2233"))
+Description: An easy-to-use wrapper function to run celltype identifiers. (Marker-based) HiCAT,SCINA, scSorter, scType, scCatch, Garnett, (Reference-based) MarkerCount, SingleR, CHETAH, CaSTLe, scmap-cell, scmap-cluster.
+License: `use_gpl3_license()`
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
