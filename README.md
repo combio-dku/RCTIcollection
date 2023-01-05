@@ -1,10 +1,10 @@
 ### An easy-to-use wrapper function to run celltype identifiers in R
 
-The package provides an easy-to-use wrapper function to run various celltype identifiers in R.
-It was used to obtain the results in the following papers.
+- The package provides an easy-to-use wrapper function to run various celltype identifiers in R.
+- It was used to obtain the results in the following papers.
 
-- "Hierarchical cell-type identifier accurately distinguishes immune-cell subtypes enabling precise profiling of tissue microenvironment with single-cell RNA-sequencing" Briefings in Bioinformatics. https://doi.org/10.1093/bib/bbad006, https://doi.org/10.1101/2022.07.27.501701.
-- "MarkerCount: A stable, count-based cell type identifier for single cell RNA-Seq experiments" Computational and Structural Biotechnology Journal, June 2022. https://doi.org/10.1016/j.csbj.2022.06.010.
+    - "Hierarchical cell-type identifier accurately distinguishes immune-cell subtypes enabling precise profiling of tissue microenvironment with single-cell RNA-sequencing" Briefings in Bioinformatics. https://doi.org/10.1093/bib/bbad006, https://doi.org/10.1101/2022.07.27.501701.
+    - "MarkerCount: A stable, count-based cell type identifier for single cell RNA-Seq experiments" Computational and Structural Biotechnology Journal, June 2022. https://doi.org/10.1016/j.csbj.2022.06.010.
 
 #### Supported celltype identifiers 
 - __Marker-based identifiers (require HiCAT marker file)__
