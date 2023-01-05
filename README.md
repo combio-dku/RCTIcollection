@@ -1,4 +1,4 @@
-### An easy-to-use wrapper function to run celltype identifiers in R
+### RCTIcollection: an easy-to-use wrapper function to run celltype identifiers in R
 
 - The package provides an easy-to-use R wrapper function to run various celltype identifiers for single-cell RNA-seq data.
 - It was used to obtain the results in the following papers.
