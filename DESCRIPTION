@@ -1,4 +1,4 @@
-Package: CTIcollection
+Package: RCTIcollection
 Title: An easy-to-use wrapper function to run celltype identifiers in R 
 Version: 0.0.1
 Authors@R: 
