@@ -24,7 +24,7 @@
 - __Required R packages__: `igraph`, `scater`, `xgboost`, `SingleCellExperiment`, `dplyr`, `stringr`, `preprocessCore`, `Seurat`, `org.Hs.eg.db`, `scuttle`, `SingleR`, `CHETAH`, `scmap`, `SCINA`, `scSorter`, `garnett`, `scCATCH`, `reticulate`
 - Once requirements are met, `CTIcollection` can be installed using the following command in R: 
 
-   `devtools::install_github("combio-dku/CTIcollection")`
+   `devtools::install_github("combio-dku/RCTIcollection")`
 
 #### Using the package
 See the jupyter notebook provided in this repo. (`CTIcollection_example.ipynb`)
