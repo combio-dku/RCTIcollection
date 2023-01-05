@@ -2,7 +2,7 @@
 % Please edit documentation in R/celltype_identifiers_collection.R
 \name{identify_celltypes_using_ref}
 \alias{identify_celltypes_using_ref}
-\title{Run reference-based celltype identifier}
+\title{identify_celltypes_using_ref}
 \usage{
 identify_celltypes_using_ref(
   df_data_test,
@@ -14,21 +14,21 @@ identify_celltypes_using_ref(
 )
 }
 \arguments{
-\item{df_data_test}{input cell-by-gene matrix (data frame), column name must be in Hugo symbol}
+\item{df_data_test}{input cell-by-gene matrix (data frame) to test. column name (marker gene) must be in Hugo symbol.}
 
 \item{df_data_ref}{cell-by-gene matrix (data frame) to be used as reference}
 
-\item{celltypes_ref}{A vector of celltypes corresponding to each row of df_data_ref}
+\item{celltypes_ref}{a vector of celltypes corresponding to each row of df_data_ref}
 
-\item{method}{Method to use. One of 'MarkerCount', 'SingleR', 'CHETAH', 'CaSTLe', 'scmap_cell', 'scmap_cluster'.}
+\item{method}{method to use. It can be one of 'MarkerCount', 'SingleR', 'CHETAH', 'CaSTLe', 'scmap_cell', or 'scmap_cluster'.}
 
-\item{log_transformed}{If df_data_test is log-normalized, you should set it TRUE. Should be FALSE for now.}
+\item{log_transformed}{If df_data_test is log-normalized, you should set it TRUE. For now, it must be FALSE.}
 
-\item{undesired_lst}{A list (vector) of celltypes that you don't want to include in reference celltype, e.g., 'Unknown' or 'Tumor'.}
+\item{undesired_lst}{a list (vector) of celltypes that you don't want to include in reference celltype, e.g., 'Unknown' or 'Tumor'.}
 }
 \value{
-marker-matrix in data frame
+a vector of predicted celltypes. Each element corresponds to a row of df_data_test.
 }
 \description{
-This function runs one of the reference-based celltype identifiers, specified by method
+This function runs one of the reference-based celltype identifiers, specified by method.
 }

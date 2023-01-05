@@ -7,11 +7,11 @@
 get_mkr_mat_from_hicat_mkr_file(mkr_file, taxo_level = "major", tissues = NULL)
 }
 \arguments{
-\item{mkr_file}{Path to the HiCAT marker file}
+\item{mkr_file}{full path to the HiCAT marker file.}
 
-\item{taxo_level}{Taxonomy level, one of 'major', 'minor' or 'subset'}
+\item{taxo_level}{taxonomy level. It can be one of 'major', 'minor' or 'subset'.}
 
-\item{tissues}{A vector of tissues (groups of celltypes) to be exported}
+\item{tissues}{a vector of tissues (groups of celltypes) to be exported. Use tissue names in the HiCAT marker file.}
 }
 \value{
 marker-matrix in data frame

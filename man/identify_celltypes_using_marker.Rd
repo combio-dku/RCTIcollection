@@ -2,7 +2,7 @@
 % Please edit documentation in R/celltype_identifiers_collection.R
 \name{identify_celltypes_using_marker}
 \alias{identify_celltypes_using_marker}
-\title{Run marker-based celltype identifier}
+\title{identify_celltypes_using_marker}
 \usage{
 identify_celltypes_using_marker(
   df_data,
@@ -14,15 +14,15 @@ identify_celltypes_using_marker(
 )
 }
 \arguments{
-\item{marker}{It can be either a string or a data frame (marker-matrix). For 'HiCAT' is must be a string representing the full path to the HiCAT marker file}
+\item{df_data}{input cell-by-gene matrix (data frame), column name must be in Hugo symbol}
 
-\item{method}{Method to use. One of 'HiCAT', 'SCINA', 'scSorter', 'scType', 'scCatch', 'Garnett'.}
+\item{marker}{it can be either a string or a data frame (marker-matrix). For 'HiCAT', it must be a string representing the full path to the HiCAT marker file. For others, it must be a data frame obtained by running 'get_mkr_mat_from_hicat_mkr_file'.}
 
-\item{df_data_test}{input cell-by-gene matrix (data frame), column name must be in Hugo symbol}
+\item{method}{method to use. It can be one of 'HiCAT', 'SCINA', 'scSorter', 'scType', 'scCatch', or 'Garnett'.}
 }
 \value{
-marker-matrix in data frame
+a vector of predicted celltypes. Each element corresponds to a row of df_data. For HiCAT, it is a data frame with 3 columns, each corresponds to major-type, minor-type and subset.
 }
 \description{
-This function runs one of the marker-based celltype identifiers, specified by method
+This function runs one of the marker-based celltype identifiers, specified by method.
 }
