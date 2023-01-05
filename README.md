@@ -1,6 +1,6 @@
 ### An easy-to-use wrapper function to run celltype identifiers in R
 
-- The package provides an easy-to-use wrapper function to run various celltype identifiers in R.
+- The package provides an easy-to-use R wrapper function to run various celltype identifiers for single-cell RNA-seq data.
 - It was used to obtain the results in the following papers.
 
     - "Hierarchical cell-type identifier accurately distinguishes immune-cell subtypes enabling precise profiling of tissue microenvironment with single-cell RNA-sequencing", Briefings in Bioinformatics. https://doi.org/10.1093/bib/bbad006, https://doi.org/10.1101/2022.07.27.501701.
