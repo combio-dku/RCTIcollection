@@ -2,20 +2,20 @@
 
 #### Supported celltype identifiers 
 - __Marker-based identifiers (require HiCAT marker file)__
-    1. HiCAT
-    1. Garnett
-    2. SCINA
-    3. scSorter
-    4. scType
-    5. scCatch
+    1. HiCAT (https://github.com/combio-dku/HiCAT)
+    1. Garnett (https://cole-trapnell-lab.github.io/garnett/)
+    2. SCINA (https://github.com/jcao89757/SCINA)
+    3. scSorter (https://cran.r-project.org/web/packages/scSorter/vignettes/scSorter.html)
+    4. scType (https://github.com/IanevskiAleksandr/sc-type)
+    5. scCatch (https://github.com/ZJUFanLab/scCATCH)
 
 - __Reference-based identifiers (require reference gene expression data with pre-annotation)__ 
-    1. MarkerCount_Ref
-    1. SingleR
-    2. CaSTLe
-    3. CHETAH
-    4. scmap-cell
-    5. scmap-cluster
+    1. MarkerCount_Ref (https://github.com/combio-dku/MarkerCount)
+    1. SingleR (https://github.com/dviraran/SingleR)
+    2. CaSTLe (https://github.com/yuvallb/CaSTLe)
+    3. CHETAH (https://github.com/jdekanter/CHETAH)
+    4. scmap-cell (https://github.com/hemberg-lab/scmap)
+    5. scmap-cluster (https://github.com/hemberg-lab/scmap)
 
 #### Requirements & Installation
 - __Python 3.8 or later__
